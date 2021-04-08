@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - SpawnPoint
+  - Rooms
+  - Room
+  - Enemy
+  - Dungeon
   layers:
   - Default
   - TransparentFX
@@ -42,9 +46,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Template
+    uniqueID: 2247827273
+    locked: 0
   - name: Ground
     uniqueID: 3426816861
     locked: 0
   - name: Fence
     uniqueID: 599950553
+    locked: 0
+  - name: Player
+    uniqueID: 1800473321
+    locked: 0
+  - name: Enemy
+    uniqueID: 2081084299
     locked: 0
