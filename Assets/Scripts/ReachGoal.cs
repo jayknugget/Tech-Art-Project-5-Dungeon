@@ -12,7 +12,7 @@ public class ReachGoal : MonoBehaviour {
 				GameObject dungeon = GameObject.FindGameObjectWithTag ("Dungeon");
 				DungeonGeneration dungeonGeneration = dungeon.GetComponent<DungeonGeneration> ();
 				dungeonGeneration.ResetDungeon ();
-				SceneManager.LoadScene ("Demo");
+				SceneManager.LoadScene ("JakeTestScene");
 			}
 		}
 	}

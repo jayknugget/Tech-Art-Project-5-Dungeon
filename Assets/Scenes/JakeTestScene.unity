@@ -243,11 +243,14 @@ MonoBehaviour:
   - {x: 2, y: 1}
   - {x: 1, y: 2}
   - {x: 1, y: 1}
-  numberOfEnemies: 2
+  numberOfEnemies: 4
   possibleEnemies:
   - {fileID: 1747285033562184, guid: e8b1d068df343e14a95123909391d5df, type: 3}
+  numberOfCoins: 2
+  coinPrefab:
+  - {fileID: 1747285033562184, guid: 1790be973feadc048a9c4096828ddce2, type: 3}
   goalPrefab: {fileID: 1648284490830996, guid: cfc35090e574a7542bdc6c3452e73375, type: 3}
-  obstacleTile: {fileID: 11400000, guid: e9462292fc2382044b428e10ae14904b, type: 2}
+  obstacleTile: {fileID: 11400000, guid: ab100ef965684244487a0a0a029260e6, type: 2}
 --- !u!4 &1398129815
 Transform:
   m_ObjectHideFlags: 0

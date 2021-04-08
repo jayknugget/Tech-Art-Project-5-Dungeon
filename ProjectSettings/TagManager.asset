@@ -9,6 +9,7 @@ TagManager:
   - Room
   - Enemy
   - Dungeon
+  - Coin
   layers:
   - Default
   - TransparentFX
