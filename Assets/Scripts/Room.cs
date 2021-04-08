@@ -15,13 +15,13 @@ public class Room
 	{
 		this.roomCoordinate = new Vector2Int (xCoordinate, yCoordinate);
 		this.neighbors = new Dictionary<string, Room> ();
-		this.population = new string[18, 10];
-		for (int xIndex = 0; xIndex < 18; xIndex += 1) {
+		this.population = new string[10, 10];
+		for (int xIndex = 0; xIndex < 10; xIndex += 1) {
 			for (int yIndex = 0; yIndex < 10; yIndex += 1) {
 				this.population [xIndex, yIndex] = "";
 			}
 		}
-		this.population [8, 5] = "Player";
+		this.population [5, 5] = "Player";
 		this.name2Prefab = new Dictionary<string, GameObject> ();
 	}
 
@@ -29,13 +29,13 @@ public class Room
 	{
 		this.roomCoordinate = roomCoordinate;
 		this.neighbors = new Dictionary<string, Room> ();
-		this.population = new string[18, 10];
-		for (int xIndex = 0; xIndex < 18; xIndex += 1) {
+		this.population = new string[10, 10];
+		for (int xIndex = 0; xIndex < 10; xIndex += 1) {
 			for (int yIndex = 0; yIndex < 10; yIndex += 1) {
 				this.population [xIndex, yIndex] = "";
 			}
 		}
-		this.population [8, 5] = "Player";
+		this.population [5, 5] = "Player";
 		this.name2Prefab = new Dictionary<string, GameObject> ();
 	}
 
@@ -105,7 +105,7 @@ public class Room
 		do {
 			region.Clear();
 
-			Vector2Int centerTile = new Vector2Int(UnityEngine.Random.Range(2, 18 - 3), UnityEngine.Random.Range(2, 10 - 3));
+			Vector2Int centerTile = new Vector2Int(UnityEngine.Random.Range(2, 10 - 3), UnityEngine.Random.Range(2, 10 - 3));
 
 			region.Add(centerTile);
 
@@ -130,13 +130,13 @@ public class Room
 	}
 
 	public void AddPopulationToTilemap (Tilemap tilemap, TileBase obstacleTile) {
-		for (int xIndex = 0; xIndex < 18; xIndex += 1) {
+		for (int xIndex = 0; xIndex < 10; xIndex += 1) {
 			for (int yIndex = 0; yIndex < 10; yIndex += 1) {
 				if (this.population [xIndex, yIndex] == "Obstacle") {
 					tilemap.SetTile (new Vector3Int (xIndex - 9, yIndex - 5, 0), obstacleTile);
 				} else if (this.population [xIndex, yIndex] != "" && this.population [xIndex, yIndex] != "Player") {
 					GameObject prefab = GameObject.Instantiate (this.name2Prefab[this.population [xIndex, yIndex]]);
-					prefab.transform.position = new Vector2 (xIndex - 9 + 0.5f, yIndex - 5 + 0.5f);
+					prefab.transform.position = new Vector2 (xIndex - 5 + 0.5f, yIndex - 5 + 0.5f);
 				}
 			}
 		}

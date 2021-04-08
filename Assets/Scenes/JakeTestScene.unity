@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 1047686733}
   - component: {fileID: 1047686732}
   - component: {fileID: 1047686731}
+  - component: {fileID: 1047686734}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -206,6 +207,19 @@ Transform:
   m_Father: {fileID: 2038129483}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1047686734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047686730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca9c53ad1101d9c4bb401cd2ff40e1bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 1047686732}
 --- !u!1 &1398129813
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,6 +264,7 @@ MonoBehaviour:
   coinPrefab:
   - {fileID: 1747285033562184, guid: 1790be973feadc048a9c4096828ddce2, type: 3}
   goalPrefab: {fileID: 1648284490830996, guid: cfc35090e574a7542bdc6c3452e73375, type: 3}
+  bossPrefab: {fileID: 1747285033562184, guid: 9537320bff33731499ef2e35c2ab913e, type: 3}
   obstacleTile: {fileID: 11400000, guid: ab100ef965684244487a0a0a029260e6, type: 2}
 --- !u!4 &1398129815
 Transform:
@@ -323,6 +338,10 @@ PrefabInstance:
     - target: {fileID: 212444449108058796, guid: 3934583622738a34f8025abb43b85feb, type: 3}
       propertyPath: m_SortingLayerID
       value: 1800473321
+      objectReference: {fileID: 0}
+    - target: {fileID: 5851944374118936429, guid: 3934583622738a34f8025abb43b85feb, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3934583622738a34f8025abb43b85feb, type: 3}

@@ -25,6 +25,8 @@ public class DungeonGeneration : MonoBehaviour {
 
 	[SerializeField]
 	private GameObject goalPrefab;
+	[SerializeField]
+	private GameObject bossPrefab;
 
 	[SerializeField]
 	private TileBase obstacleTile;
@@ -95,7 +97,9 @@ public class DungeonGeneration : MonoBehaviour {
 		}
 
 		GameObject[] goalPrefabs = { this.goalPrefab };
+		GameObject[] bossPrefabs = { this.bossPrefab };
 		finalRoom.PopulatePrefabs(1, goalPrefabs);
+		finalRoom.PopulatePrefabs(1, bossPrefabs);
 
 		return this.rooms [initialRoomCoordinate.x, initialRoomCoordinate.y];
 	}
