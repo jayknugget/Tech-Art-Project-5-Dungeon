@@ -16,7 +16,7 @@ public class EnterDoor : MonoBehaviour {
 				DungeonGeneration dungeonGeneration = dungeon.GetComponent<DungeonGeneration> ();
 				Room room = dungeonGeneration.CurrentRoom ();
 				dungeonGeneration.MoveToRoom (room.Neighbor (this.direction));
-				SceneManager.LoadScene ("Demo");
+				SceneManager.LoadScene ("JakeTestScene");
 			}
 		}
 	}
