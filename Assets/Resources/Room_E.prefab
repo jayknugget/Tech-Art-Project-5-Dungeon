@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4683943398299236}
   - component: {fileID: 2569400266898521000}
+  - component: {fileID: 7241061629924492150}
   m_Layer: 0
   m_Name: Room_E
   m_TagString: Room
@@ -46,6 +47,36 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!60 &7241061629924492150
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126570448096648}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.029098347, y: 3.0368848}
+      - {x: -8.021956, y: 2.9860656}
+      - {x: -7.978766, y: -2.9622955}
+      - {x: 8.036964, y: -2.9040987}
+      - {x: 8.021957, y: 2.9860659}
 --- !u!1 &1137485309082016
 GameObject:
   m_ObjectHideFlags: 0
